@@ -1,0 +1,20 @@
+.card {
+  padding: 3rem;
+  background-color: $white;
+  border-radius: 1rem;
+  box-shadow: 0px 1px 24px 0px $shadow;
+  transition: all 0.3s ease;
+
+  &--interactive {
+    cursor: pointer;
+
+    &:hover,
+    &:focus-visible {
+      transform: translateY(-4px);
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+  }
+}

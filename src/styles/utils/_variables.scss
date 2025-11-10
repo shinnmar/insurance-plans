@@ -1,0 +1,50 @@
+// Variables for colors, fonts, and other design tokens
+
+// Base colors
+$white: #ffffff;
+$secondary-white: #f8f9ff;
+$bg-white: #fafbff;
+$black: #03050f;
+$secondary-black: #141938;
+$dark-blue: #0a051e;
+$dark-grey: #2b304e;
+$light-grey: #5e6488; 
+$secondary-grey: #7981b2;
+$lightest-grey: #ccd1ee;
+$selected: #389e0d;
+$shadow: #AEACF340;
+
+//Brand colors
+$gradient: linear-gradient(86.01deg, #00f4e2 0%, #00ff7f 100%);
+$secondary-gradient: #7df0ba;
+$blueberry: rgba(79, 79, 255, 1);
+$red-rimac: rgba(255, 28, 68, 1);
+
+// Font families
+$font-family-primary: "BR Sonoma", sans-serif;
+$font-family-secondary: "Lato", sans-serif;
+
+// Font sizes
+$font-size-xs: 0.75rem;
+$font-size-sm: 0.875rem;
+$font-size-base: 1rem;
+$font-size-lg: 1.125rem;
+$font-size-xl: 1.25rem;
+$font-size-2xl: 1.5rem;
+$font-size-3xl: 1.75rem;
+
+// Font weights
+$font-weight-normal: 400;
+$font-weight-regular: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+// Line heights
+$line-height-normal: 1.5;
+$line-height-tight: 1.25;
+
+// Breakpoints
+$breakpoint-xs: 420px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;

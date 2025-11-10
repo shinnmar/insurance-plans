@@ -1,0 +1,37 @@
+@use '../utils/variables' as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: $font-family-primary;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: $bg-white;
+  overflow-x: hidden;
+}
+
+
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, p {
+  padding: 0;
+  margin: 0;
+}

@@ -1,0 +1,11 @@
+@use '../utils/variables' as *;
+
+.container {
+  max-width: 1120px;
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 1rem;
+  @media (max-width: $breakpoint-lg) {
+      padding-inline: 1.5rem;
+    }
+}

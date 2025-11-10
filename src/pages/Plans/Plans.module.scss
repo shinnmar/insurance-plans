@@ -1,0 +1,95 @@
+.plansPage {
+  margin: 0 auto;
+  font-family: $font-family-secondary;
+  padding: 2rem 0 9.6rem;
+
+  h2,
+  p {
+    text-align: center;
+    @media (max-width: $breakpoint-md) {
+      text-align: left;
+    }
+  }
+
+  h2 {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 2.5rem;
+    font-weight: $font-weight-bold;
+    line-height: 3rem;
+
+    @media (max-width: $breakpoint-md) {
+      width: 100%;
+      text-align: left;
+      font-size: 1.75rem;
+      line-height: 2.25rem;
+    }
+  }
+
+  &__text {
+    margin: 1rem 0 3rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+
+    h4 {
+      font-size: $font-size-xl;
+      font-weight: 900;
+      margin: 0.5rem 0;
+    }
+
+    p {
+      font-size: $font-size-xs;
+      text-align: left;
+    }
+  }
+
+  &__selected {
+    color: $selected;
+
+    svg {
+      font-size: 1.5rem;
+      position: absolute;
+      top: -23px;
+      right: -1px;
+    }
+  }
+
+  &__unselected {
+    position: absolute;
+    top: -23px;
+    right: -1px;
+    width: 24px;
+    height: 24px;
+    border: 1px solid $lightest-grey;
+    border-radius: 50%;
+  }
+}
+
+.typesContainer {
+  width: 600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  text-align: center;
+
+  @media (max-width: $breakpoint-md) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1.5rem;
+  }
+}
+
+.cardType {
+  padding: 2.5rem 1.5rem 2.5rem 1.5rem;
+
+  &--active {
+    border: 3px solid $secondary-black;
+  }
+}

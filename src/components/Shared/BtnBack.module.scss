@@ -1,0 +1,22 @@
+.btnBack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0;
+  background-color: transparent;
+  border: 0;
+  color: $blueberry;
+  font-size: 1.1rem;
+  column-gap: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 2rem 0 3.75rem 5rem;
+
+  @media (max-width: $breakpoint-md) {
+    margin: 0 0 2rem;
+  }
+
+  svg {
+    font-size: $font-size-xl;
+  }
+}

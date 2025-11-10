@@ -1,0 +1,73 @@
+.button {
+  cursor: pointer;
+  align-self: flex-start;
+  color: $white;
+  padding: 1.25rem 2.5rem;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: $font-weight-bold;
+  border-radius: 2.5rem;
+  border: none;
+  transition: color 0.4s ease, background-color 0.4s ease, transform 0.3s ease;
+  isolation: isolate;
+  overflow: hidden;
+  position: relative;
+
+  span {
+    position: relative;
+    z-index: 1;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.5s ease, height 0.5s ease, opacity 0.4s ease;
+    z-index: 0;
+    opacity: 0;
+  }
+
+  &:active {
+    transform: scale(0.97);
+  }
+
+  @media (max-width: $breakpoint-lg) {
+    width: 100%;
+  }
+
+  &--black {
+    background-color: $black;
+    border: 2px solid $black;
+    &::before {
+      background-color: $white;
+    }
+
+    &:hover::before {
+      width: 300%;
+      height: 300%;
+      opacity: 1;
+    }
+
+    &:hover {
+      color: $black;
+      border: 2px solid $black;
+    }
+  }
+
+  &--red {
+    background-color: $red-rimac;
+
+    &:hover {
+      background-color: rgb(230, 0, 50);
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+  }
+}

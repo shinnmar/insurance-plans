@@ -1,0 +1,55 @@
+.footer {
+  background-color: $black;
+  color: $white;
+  font-weight: $font-weight-normal;
+  padding: 2rem 0 2rem;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: $font-size-sm;
+
+    @media (max-width: $breakpoint-lg) {
+      flex-direction: column;
+    }
+  }
+
+  &__logo-link {
+    text-decoration: none;
+  }
+
+  &__logo {
+    width: 85px;
+
+    &--desktop {
+      display: block;
+    }
+
+    &--mobile {
+      display: none;
+    }
+
+    @media (max-width: $breakpoint-lg) {
+      margin: 0 0 1.5rem;
+
+      &--desktop {
+        display: none;
+      }
+
+      &--mobile {
+        display: block;
+        width: 138px;
+      }
+    }
+  }
+
+  &__text {
+    @media (max-width: $breakpoint-lg) {
+      border-top: 1px solid $dark-grey;
+      padding: 1.5rem 0 0;
+      width: 90%;
+      text-align: center;
+    }
+  }
+}
