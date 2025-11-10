@@ -3,6 +3,10 @@
   font-family: $font-family-secondary;
   padding: 2rem 0 9.6rem;
 
+  @media (max-width: $breakpoint-md) {
+    padding: 2rem 0 1.6rem;
+  }
+
   h2,
   p {
     text-align: center;

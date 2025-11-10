@@ -102,10 +102,6 @@
     display: none;
   }
 
-  :global(.swiper) {
-    overflow: visible;
-  }
-
   :global(.swiper-slide) {
     display: flex;
     justify-content: center;
